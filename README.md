@@ -1,4 +1,4 @@
-Fork of [peronnel](https://github.com/t3brightside/personnel)
+Fork of [personnel](https://github.com/t3brightside/personnel)
 
 # Personnel
 [![License](https://poser.pugx.org/t3brightside/personnel/license)](LICENSE.txt)
