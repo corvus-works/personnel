@@ -132,3 +132,7 @@
 .personnel.table .image {
   width: 50px
 }
+
+.zoomable:hover {
+  transform: scale(1.2);
+}
