@@ -21,6 +21,7 @@ CREATE TABLE tx_personnel_domain_model_person (
 	email tinytext,
 	images int(11) unsigned DEFAULT '0',
 	selected_categories text,
+	biolink tinytext,
 	linkedin tinytext,
 	xing tinytext,
 

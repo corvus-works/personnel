@@ -61,6 +61,7 @@ return [
                 email,--linebreak--,
                 images,--linebreak--,
                 info,--linebreak--,
+                biolink,
                 linkedin,
                 xing
             '
@@ -368,6 +369,16 @@ return [
                 'cols' => 60,
                 'rows' => 6
             ]
+        ],
+        'biolink' => [
+          'exclude' => 1,
+          'l10n_mode' => 'prefixLangTitle',
+          'label' => 'BioLink',
+          'config' => [
+            'type' => 'input',
+            'size' => 20,
+            'eval' => 'trim'
+          ]
         ],
         'linkedin' => [
             'exclude' => 1,

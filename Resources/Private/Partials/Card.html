@@ -3,7 +3,9 @@
     <f:if condition="{person.files.0}">
       <f:then>
         <figure>
+          <a href="{person.data.biolink}">
             <f:image image="{person.files.0}" class="person" loading="{f:if(condition: '!{data.tx_imagelazyload}', then: 'lazy')}" width="{settings.cardImageWidth}c" height="{settings.cardImageHeight}c-100" alt="{person.data.firstname} {person.data.lastname}" additionalAttributes="{srcset: '{f:uri.image(image:\'{person.files.0}\', width:\'{cardImageWidth_x2}.c\', height:\'{cardImageHeight_x2}.c-100\')} 2x'}" />
+          </a>
         </figure>
       </f:then>
       <f:else>
@@ -14,7 +16,9 @@
     </f:if>
   </f:if>
   <f:if condition="{person.data.responsibility}"><p class="responsibility">{person.data.responsibility}</p></f:if>
-  <f:if condition="{person.data.firstname} || {person.data.lastname}"><{f:if(condition: '{data.tx_personnel_titlewrap}', then: '{data.tx_personnel_titlewrap}', else: 'h3')} class="name"><f:if condition="{person.data.title}">{person.data.title} </f:if>{person.data.firstname} {person.data.lastname}</{f:if(condition: '{data.tx_personnel_titlewrap}', then: '{data.tx_personnel_titlewrap}', else: 'h3')}></f:if>
+  <a href="{person.data.biolink}">
+    <f:if condition="{person.data.firstname} || {person.data.lastname}"><{f:if(condition: '{data.tx_personnel_titlewrap}', then: '{data.tx_personnel_titlewrap}', else: 'h3')} class="name"><f:if condition="{person.data.title}">{person.data.title} </f:if>{person.data.firstname} {person.data.lastname}</{f:if(condition: '{data.tx_personnel_titlewrap}', then: '{data.tx_personnel_titlewrap}', else: 'h3')}></f:if>
+  </a>
   <f:if condition="{person.data.profession}"><p class="profession">{person.data.profession}</p></f:if>
   <f:if condition="{person.data.phone} || {person.data.email}">
     <p class="contact">
