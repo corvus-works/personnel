@@ -18,6 +18,7 @@ CREATE TABLE tx_personnel_domain_model_person (
 	responsibility tinytext,
 	info text,
 	phone tinytext,
+	mobile tinytext,
 	email tinytext,
 	images int(11) unsigned DEFAULT '0',
 	selected_categories text,

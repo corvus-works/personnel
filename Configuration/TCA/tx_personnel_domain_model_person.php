@@ -58,6 +58,7 @@ return [
                 profession,
                 responsibility,--linebreak--,
                 phone,
+                mobile,--linebreak--,
                 email,--linebreak--,
                 images,--linebreak--,
                 info,--linebreak--,
@@ -306,6 +307,18 @@ return [
         'phone' => [
             'exclude' => 1,
             'label' => 'Phone',
+            'config' => [
+                'type' => 'input',
+                'size' => 20,
+                'eval' => 'trim',
+                'behaviour' => [
+                    'allowLanguageSynchronization' => true,
+                ],
+            ]
+        ],
+        'mobile' => [
+            'exclude' => 1,
+            'label' => 'Mobile',
             'config' => [
                 'type' => 'input',
                 'size' => 20,
